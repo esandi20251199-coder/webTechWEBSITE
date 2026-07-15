@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" width="1200" height="600" role="img" aria-label="Illustration of mountains, sea and a rising sun">
+  <rect width="1200" height="600" fill="#bfe3e3"/>
+  <circle cx="930" cy="150" r="70" fill="#f2b705"/>
+  <path d="M0 380 L200 250 L360 380 L520 220 L720 400 L900 260 L1050 380 L1200 300 L1200 600 L0 600 Z" fill="#0d7377"/>
+  <path d="M0 460 L260 360 L520 470 L820 380 L1060 470 L1200 420 L1200 600 L0 600 Z" fill="#10343b"/>
+  <path d="M0 520 Q300 490 600 520 T1200 520 L1200 600 L0 600 Z" fill="#0a5a5d"/>
+</svg>

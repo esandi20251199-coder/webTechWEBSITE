@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260" width="400" height="260" role="img" aria-label="Safari grassland with an acacia tree and animals">
+  <rect width="400" height="260" fill="#f6e2a8"/>
+  <circle cx="320" cy="70" r="34" fill="#e98a15"/>
+  <rect y="180" width="400" height="80" fill="#c9a24b"/>
+  <rect x="150" y="150" width="10" height="70" fill="#6b4a2b"/>
+  <path d="M100 150 Q155 90 210 150 Q160 130 100 150 Z" fill="#3f7d3a"/>
+  <ellipse cx="70" cy="215" rx="26" ry="14" fill="#6b4a2b"/>
+  <rect x="60" y="205" width="6" height="16" fill="#6b4a2b"/>
+  <rect x="80" y="205" width="6" height="16" fill="#6b4a2b"/>
+</svg>

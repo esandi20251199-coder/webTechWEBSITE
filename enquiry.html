@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRAVORA - Travel Enquiry</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;900&family=Poppins:wght@300;400;500;600&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header>
+        <div class="logo-container">
+            <img class="logo" src="images/logo.jpg" alt="TRAVORA logo">
+            <span class="site-name">TRAVORA</span>
+        </div>
+        <nav aria-label="Main Navigation">
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-btn">Home</a></li>
+                <li><a href="destinations.html" class="nav-btn">Destinations</a></li>
+                <li><a href="enquiry.html" class="nav-btn active">Enquiry</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+
+        <section class="promo-banner" aria-labelledby="enquiry-heading">
+            <h1 id="enquiry-heading">Travel enquiry form</h1>
+            <p>Tell us about the trip you are dreaming of and our team will get back to you.</p>
+        </section>
+
+        <div class="form-layout-container">
+
+            <!-- ===== LEFT: the enquiry form ===== -->
+            <section class="form-section" aria-labelledby="form-heading">
+                <h2 id="form-heading">Submit your travel request</h2>
+
+                <!-- novalidate turns OFF the browser's HTML5 validation, so ALL
+                     checking is done by JavaScript (coursework rule). -->
+                <form action="#" method="post" id="enquiry-form" novalidate>
+
+                    <!-- GROUP 1: Personal details -->
+                    <fieldset class="form-group">
+                        <legend>Your details</legend>
+
+                        <div class="form-row">
+                            <!-- Element type 1: text input -->
+                            <div class="input-field-block">
+                                <label for="fullname">Full name *</label>
+                                <input type="text" id="fullname" name="fullname"
+                                       placeholder="e.g. Jane Perera"
+                                       aria-describedby="fullname-error">
+                                <span class="error-msg" id="fullname-error"></span>
+                            </div>
+
+                            <!-- Element type 2: email address (kept as text so no HTML5 check) -->
+                            <div class="input-field-block">
+                                <label for="email">Email address *</label>
+                                <input type="text" id="email" name="email"
+                                       placeholder="e.g. jane@example.com"
+                                       aria-describedby="email-error">
+                                <span class="error-msg" id="email-error"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <!-- Element type 3: telephone -->
+                            <div class="input-field-block">
+                                <label for="phone">Phone number</label>
+                                <input type="tel" id="phone" name="phone"
+                                       placeholder="e.g. 077 123 4567">
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <!-- GROUP 2: Trip details -->
+                    <fieldset class="form-group">
+                        <legend>Trip details</legend>
+
+                        <div class="form-row">
+                            <!-- Element type 4: drop-down select -->
+                            <div class="input-field-block">
+                                <label for="category">Destination category</label>
+                                <select id="category" name="category">
+                                    <option value="">Please choose...</option>
+                                    <option value="beaches">Beaches</option>
+                                    <option value="mountains">Mountains</option>
+                                    <option value="historical">Historical Sites</option>
+                                    <option value="wildlife">Wildlife</option>
+                                    <option value="cities">Cities</option>
+                                    <option value="scenic">Scenic Wonders</option>
+                                </select>
+                            </div>
+
+                            <!-- Element type 5: text input with datalist suggestions -->
+                            <div class="input-field-block">
+                                <label for="country">Preferred country</label>
+                                <input type="text" id="country" name="country"
+                                       list="countries" placeholder="Start typing a country...">
+                                <datalist id="countries"></datalist>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <!-- Element type 6: date input -->
+                            <div class="input-field-block">
+                                <label for="depart">Departure date *</label>
+                                <input type="date" id="depart" name="depart"
+                                       aria-describedby="depart-error">
+                                <span class="error-msg" id="depart-error"></span>
+                            </div>
+
+                            <!-- Element type 7: number input -->
+                            <div class="input-field-block">
+                                <label for="travellers">Number of travellers</label>
+                                <input type="number" id="travellers" name="travellers" value="1" step="1">
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <!-- GROUP 3: Trip type (radio buttons - choose one) -->
+                    <fieldset class="form-group">
+                        <legend>Trip type</legend>
+                        <div class="form-row">
+                            <!-- Element type 8: radio buttons -->
+                            <div class="choice-row">
+                                <input type="radio" id="solo" name="triptype" value="solo" checked>
+                                <label for="solo">Solo travel</label>
+                            </div>
+                            <div class="choice-row">
+                                <input type="radio" id="family" name="triptype" value="family">
+                                <label for="family">Family trip</label>
+                            </div>
+                            <div class="choice-row">
+                                <input type="radio" id="group" name="triptype" value="group">
+                                <label for="group">Group tour</label>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <!-- GROUP 4: Interests (checkboxes - choose any) -->
+                    <fieldset class="form-group">
+                        <legend>Interests</legend>
+                        <div class="checkbox-group-block">
+                            <p class="checkbox-title">Select all categories you want to explore:</p>
+                            <!-- Element type 9: checkboxes -->
+                            <label class="checkbox-label" for="i-beach">
+                                <input type="checkbox" id="i-beach" name="interest-beach" value="beaches">
+                                Beaches
+                            </label>
+                            <label class="checkbox-label" for="i-mountain">
+                                <input type="checkbox" id="i-mountain" name="interest-mountain" value="mountains">
+                                Mountains
+                            </label>
+                            <label class="checkbox-label" for="i-history">
+                                <input type="checkbox" id="i-history" name="interest-history" value="historical">
+                                Historical Sites
+                            </label>
+                            <label class="checkbox-label" for="i-wildlife">
+                                <input type="checkbox" id="i-wildlife" name="interest-wildlife" value="wildlife">
+                                Wildlife
+                            </label>
+                            <label class="checkbox-label" for="i-cities">
+                                <input type="checkbox" id="i-cities" name="interest-cities" value="cities">
+                                Cities
+                            </label>
+                            <label class="checkbox-label" for="i-scenic">
+                                <input type="checkbox" id="i-scenic" name="interest-scenic" value="scenic">
+                                Scenic Wonders
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <!-- GROUP 5: Message -->
+                    <fieldset class="form-group">
+                        <legend>Your message</legend>
+                        <!-- Element type 10: textarea -->
+                        <div class="input-field-block full-width">
+                            <label for="message">Extra details or questions</label>
+                            <textarea id="message" name="message" rows="5"
+                                      placeholder="Tell us more about your dream trip..."></textarea>
+                        </div>
+                    </fieldset>
+
+                    <div class="form-actions">
+                        <button type="reset" class="reset-btn">Clear form</button>
+                        <button type="submit" class="submit-btn">Send enquiry</button>
+                    </div>
+
+                    <!-- JavaScript writes the success message here.
+                         role="status" + aria-live tell screen readers to announce it. -->
+                    <p class="success-msg" id="form-success" role="status" aria-live="polite"></p>
+
+                </form>
+            </section>
+
+            <!-- ===== RIGHT: help sidebar ===== -->
+            <aside class="sidebar-block" aria-labelledby="sidebar-heading">
+                <h2 id="sidebar-heading">Need help?</h2>
+                <p>Quick guidance for filling in the enquiry form.</p>
+
+                <div class="faq-card">
+                    <h3>How long is the response time?</h3>
+                    <p>Our travel experts reply within 2 working days.</p>
+                </div>
+                <div class="faq-card">
+                    <h3>What should I include?</h3>
+                    <p>Your budget, travel dates and preferred activities.</p>
+                </div>
+                <div class="faq-card">
+                    <h3>Contact support</h3>
+                    <p>info@travora.example</p>
+                </div>
+            </aside>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer-left">
+            <p>&copy; 2026 TRAVORA. All rights reserved.</p>
+        </div>
+        <div class="footer-socials">
+            <span>Follow us:</span>
+            <a href="#" class="social-box" aria-label="Facebook">F</a>
+            <a href="#" class="social-box" aria-label="X">X</a>
+            <a href="#" class="social-box" aria-label="Instagram">I</a>
+            <a href="#" class="social-box" aria-label="LinkedIn">L</a>
+        </div>
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="index.html">Back to Home</a>
+        </div>
+    </footer>
+
+    <button type="button" id="to-top" class="to-top" aria-label="Back to top">&uarr;</button>
+
+    <div id="chatbot-root"></div>
+
+    <!-- Runs the custom JavaScript form validation -->
+    <script src="countries.js"></script>
+    <script src="validation.js"></script>
+    <script src="chatbot.js"></script>
+    <script src="interactive.js"></script>
+</body>
+</html>

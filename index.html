@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRAVORA - Discover Your Next Adventure</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;900&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- ===== Top banner: logo + name + navigation ===== -->
+    <header>
+        <div class="logo-container">
+            <img class="logo" src="images/logo.jpg" alt="TRAVORA logo">
+            <span class="site-name">TRAVORA</span>
+        </div>
+        <nav aria-label="Main Navigation">
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-btn active">Home</a></li>
+                <li><a href="destinations.html" class="nav-btn">Destinations</a></li>
+                <li><a href="enquiry.html" class="nav-btn">Enquiry</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+
+        <!-- ===== Hero banner with background video ===== -->
+        <section class="video-hero home-hero" aria-labelledby="hero-heading">
+            <video class="video-bg" autoplay muted loop playsinline
+                   poster="images/whitehaven-beach-australia.jpg">
+                <source src="images/coast.mp4" type="video/mp4">
+            </video>
+            <div class="video-overlay"></div>
+            <div class="video-hero-content">
+                <p class="eyebrow light">WELCOME TO TRAVORA</p>
+                <h1 id="hero-heading">Discover your next adventure</h1>
+                <p>
+                    Explore hand-picked destinations across beaches, mountains, historical sites,<br>
+                    wildlife, cities and scenic wonders. Filter, search and plan the trip you have always dreamed of.
+                </p>
+                <a href="destinations.html" class="cta-btn hero-cta">Explore destinations</a>
+            </div>
+        </section>
+
+        <!-- ===== Animated statistics bar ===== -->
+        <section class="stats-bar reveal" aria-label="TRAVORA at a glance">
+            <div class="stat">
+                <span class="stat-number" data-target="39">0</span>
+                <span class="stat-label">Destinations</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number" data-target="6">0</span>
+                <span class="stat-label">Categories</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number" data-target="29">0</span>
+                <span class="stat-label">Countries</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number" data-target="100" data-suffix="+">0</span>
+                <span class="stat-label">Happy Travellers</span>
+            </div>
+        </section>
+
+        <!-- ===== Destination explorer (filled by destinations.js from XML) ===== -->
+        <section class="explorer-section" aria-labelledby="grid-heading">
+            <div class="filter-header">
+                <h2 id="grid-heading">Explore destinations</h2>
+                <nav class="filter-controls" aria-label="Destination categories">
+                    <button type="button" class="filter-btn active" data-category="all">All</button>
+                    <button type="button" class="filter-btn" data-category="beaches">Beaches</button>
+                    <button type="button" class="filter-btn" data-category="mountains">Mountains</button>
+                    <button type="button" class="filter-btn" data-category="historical">Historical Sites</button>
+                    <button type="button" class="filter-btn" data-category="wildlife">Wildlife</button>
+                    <button type="button" class="filter-btn" data-category="cities">Cities</button>
+                    <button type="button" class="filter-btn" data-category="scenic">Scenic Wonders</button>
+                </nav>
+            </div>
+
+            <div class="search-row">
+                <input type="text" id="destination-search" class="search-input"
+                       placeholder="Search destinations by name or location..."
+                       aria-label="Search destinations">
+                <span id="result-count" class="result-count"></span>
+            </div>
+
+            <!-- JavaScript inserts the destination cards here -->
+            <div id="destination-grid" class="grid-container"></div>
+        </section>
+
+        <!-- ===== Promo banner linking to the form ===== -->
+        <section class="promo-banner reveal" aria-labelledby="promo-heading">
+            <h2 id="promo-heading">Have questions? Contact our travel experts</h2>
+            <p>Need a custom itinerary, local guides or budget advice? We are ready to help.</p>
+            <a href="enquiry.html" class="form-route-btn">Go to travel enquiry form</a>
+        </section>
+    </main>
+
+    <!-- ===== Footer ===== -->
+    <footer>
+        <div class="footer-left">
+            <p>&copy; 2026 TRAVORA. All rights reserved.</p>
+        </div>
+        <div class="footer-socials">
+            <span>Follow us:</span>
+            <a href="#" class="social-box" aria-label="Facebook">F</a>
+            <a href="#" class="social-box" aria-label="X">X</a>
+            <a href="#" class="social-box" aria-label="Instagram">I</a>
+            <a href="#" class="social-box" aria-label="LinkedIn">L</a>
+        </div>
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="enquiry.html">Contact Us</a>
+        </div>
+    </footer>
+
+    <!-- Back-to-top button (shown by interactive.js when you scroll down) -->
+    <button type="button" id="to-top" class="to-top" aria-label="Back to top">&uarr;</button>
+
+    <!-- The chatbot and the destination detail popup build themselves here -->
+    <div id="chatbot-root"></div>
+    <div id="modal-root"></div>
+
+    <script src="destinations.js"></script>
+    <script src="chatbot.js"></script>
+    <script src="interactive.js"></script>
+</body>
+</html>

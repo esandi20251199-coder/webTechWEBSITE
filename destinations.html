@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRAVORA - Destinations</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;900&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header>
+        <div class="logo-container">
+            <img class="logo" src="images/logo.jpg" alt="TRAVORA logo">
+            <span class="site-name">TRAVORA</span>
+        </div>
+        <nav aria-label="Main Navigation">
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-btn">Home</a></li>
+                <li><a href="destinations.html" class="nav-btn active">Destinations</a></li>
+                <li><a href="enquiry.html" class="nav-btn">Enquiry</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+
+        <!-- ===== VIDEO BANNER (the coast video plays behind this heading) ===== -->
+        <section class="video-hero" aria-labelledby="dest-heading">
+            <video class="video-bg" autoplay muted loop playsinline
+                   poster="images/navagio-beach-greece.jpg">
+                <source src="images/coast.mp4" type="video/mp4">
+            </video>
+            <div class="video-overlay"></div>
+            <div class="video-hero-content">
+                <h1 id="dest-heading">Explore our destinations</h1>
+                <p>
+                    Browse destinations by category. The cards below are loaded from an XML
+                    data file using JavaScript. Use the buttons or the search bar to find
+                    your perfect trip.
+                </p>
+            </div>
+        </section>
+
+        <!-- ===== Filterable + searchable card grid ===== -->
+        <section class="explorer-section" aria-labelledby="filter-heading">
+            <div class="filter-header">
+                <h2 id="filter-heading">Destination categories</h2>
+                <nav class="filter-controls" aria-label="Destination categories">
+                    <button type="button" class="filter-btn active" data-category="all">All</button>
+                    <button type="button" class="filter-btn" data-category="beaches">Beaches</button>
+                    <button type="button" class="filter-btn" data-category="mountains">Mountains</button>
+                    <button type="button" class="filter-btn" data-category="historical">Historical Sites</button>
+                    <button type="button" class="filter-btn" data-category="wildlife">Wildlife</button>
+                    <button type="button" class="filter-btn" data-category="cities">Cities</button>
+                    <button type="button" class="filter-btn" data-category="scenic">Scenic Wonders</button>
+                </nav>
+            </div>
+
+            <div class="search-row">
+                <input type="text" id="destination-search" class="search-input"
+                       placeholder="Search destinations by name or location..."
+                       aria-label="Search destinations">
+                <span id="result-count" class="result-count"></span>
+            </div>
+
+            <p class="filter-note">
+                Choose a category to filter destinations: Beaches, Mountains, Historical
+                Sites, Wildlife, Cities and Scenic Wonders. You can also search by name or location.
+            </p>
+
+            <!-- JavaScript inserts the destination cards here -->
+            <div id="destination-grid" class="grid-container"></div>
+        </section>
+
+        <!-- ===== Accessible summary table (accessibility technique: Tables) ===== -->
+        <section class="table-section" aria-labelledby="table-heading">
+            <h2 id="table-heading">Sample entrance fees</h2>
+            <table class="data-table">
+                <caption>A sample of destinations, categories, locations and entrance fees</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Destination</th>
+                        <th scope="col">Category</th>
+                        <th scope="col">Location</th>
+                        <th scope="col">Entrance Fee</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Bali</th>
+                        <td>Beaches</td>
+                        <td>Indonesia</td>
+                        <td>Free</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Mount Fuji</th>
+                        <td>Mountains</td>
+                        <td>Honshu, Japan</td>
+                        <td>$40.00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Taj Mahal</th>
+                        <td>Historical Sites</td>
+                        <td>Agra, India</td>
+                        <td>$20.00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Serengeti</th>
+                        <td>Wildlife</td>
+                        <td>Tanzania</td>
+                        <td>$70.00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Tokyo</th>
+                        <td>Cities</td>
+                        <td>Japan</td>
+                        <td>Free</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Grand Canyon</th>
+                        <td>Scenic Wonders</td>
+                        <td>Arizona, USA</td>
+                        <td>$35.00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="promo-banner" aria-labelledby="cta-heading">
+            <h2 id="cta-heading">Found a destination you love?</h2>
+            <p>Send us an enquiry and our travel experts will help you plan your trip.</p>
+            <a href="enquiry.html" class="form-route-btn">Go to travel enquiry form</a>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-left">
+            <p>&copy; 2026 TRAVORA. All rights reserved.</p>
+        </div>
+        <div class="footer-socials">
+            <span>Follow us:</span>
+            <a href="#" class="social-box" aria-label="Facebook">F</a>
+            <a href="#" class="social-box" aria-label="X">X</a>
+            <a href="#" class="social-box" aria-label="Instagram">I</a>
+            <a href="#" class="social-box" aria-label="LinkedIn">L</a>
+        </div>
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="index.html">Back to Home</a>
+        </div>
+    </footer>
+
+    <button type="button" id="to-top" class="to-top" aria-label="Back to top">&uarr;</button>
+
+    <div id="chatbot-root"></div>
+    <div id="modal-root"></div>
+
+    <script src="destinations.js"></script>
+    <script src="chatbot.js"></script>
+    <script src="interactive.js"></script>
+</body>
+</html>

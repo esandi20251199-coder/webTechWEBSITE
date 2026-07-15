@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Well-formed XML data source for TRAVORA (Travel Destination Explorer).
+     One root element <destinations> is the parent of all <destination> children (Lecture 11, Rule 1). -->
+<destinations>
+
+    <!-- ============ BEACHES ============ -->
+    <destination category="beaches">
+        <destination_name>Baia do Sancho</destination_name>
+        <category>beaches</category>
+        <location>Fernando de Noronha, Brazil</location>
+        <description>Award winning bay with turquoise water and dramatic green cliffs.</description>
+        <image_url>images/baia-do-sancho.jpg</image_url>
+        <entrance_fee>20.00</entrance_fee>
+    </destination>
+
+    <destination category="beaches">
+        <destination_name>Bali</destination_name>
+        <category>beaches</category>
+        <location>Indonesia</location>
+        <description>Golden beaches, warm waters and coral reefs perfect for snorkelling.</description>
+        <image_url>images/bali.jpg</image_url>
+        <entrance_fee>0.00</entrance_fee>
+    </destination>
+
+    <destination category="beaches">
+        <destination_name>Matira Beach</destination_name>
+        <category>beaches</category>
+        <location>Bora Bora, French Polynesia</location>
+        <description>Soft white sand and calm lagoon waters in the South Pacific.</description>
+        <image_url>images/matira-beach-bora.jpg</image_url>
+        <entrance_fee>0.00</entrance_fee>
+    </destination>
+
+    <destination category="beaches">
+        <destination_name>Maya Bay</destination_name>
+        <category>beaches</category>
+        <location>Krabi, Thailand</location>
+        <description>Sheltered bay framed by towering limestone cliffs.</description>
+        <image_url>images/maya-bay-thailand.jpg</image_url>
+        <entrance_fee>15.00</entrance_fee>
+    </destination>
+
+    <destination category="beaches">
+        <destination_name>Navagio Beach</destination_name>
+        <category>beaches</category>
+        <location>Zakynthos, Greece</location>
+        <description>Famous shipwreck cove reached only by boat.</description>
+        <image_url>images/navagio-beach-greece.jpg</image_url>
+        <entrance_fee>0.00</entrance_fee>
+    </destination>
+
+    <destination category="beaches">
+        <destination_name>Pink Beach</destination_name>
+        <category>beaches</category>
+        <location>Komodo, Indonesia</location>
+        <description>Rare pink sand shore beside a clear blue sea.</description>
+        <image_url>images/pink-beach-indonesia.jpg</image_url>
+        <entrance_fee>10.00</entrance_fee>
+    </destination>
+
+    <destination category="beaches">
+        <destination_name>Tulum Beach</destination_name>
+        <category>beaches</category>
+        <location>Quintana Roo, Mexico</location>
+        <description>Caribbean sand backed by ancient Mayan ruins.</description>
+        <image_url>images/tulum-beach.jpg</image_url>
+        <entrance_fee>12.00</entrance_fee>
+    </destination>
+
+    <destination category="beaches">
+        <destination_name>Whitehaven Beach</destination_name>
+        <category>beaches</category>
+        <location>Whitsundays, Australia</location>
+        <description>Pure silica sand swirled with turquoise tides.</description>
+        <image_url>images/whitehaven-beach-australia.jpg</image_url>
+        <entrance_fee>0.00</entrance_fee>
+    </destination>
+
+    <!-- ============ MOUNTAINS ============ -->
+    <destination category="mountains">
+        <destination_name>Dolomites</destination_name>
+        <category>mountains</category>
+        <location>Italy</location>
+        <description>Jagged limestone peaks loved by hikers and skiers.</description>
+        <image_url>images/dolomites-italy.jpg</image_url>
+        <entrance_fee>25.00</entrance_fee>
+    </destination>
+
+    <destination category="mountains">
+        <destination_name>Mount Bromo</destination_name>
+        <category>mountains</category>
+        <location>East Java, Indonesia</location>
+        <description>Active volcano famous for sunrise over a sea of sand.</description>
+        <image_url>images/mount-bromo-indonesia.jpg</image_url>
+        <entrance_fee>18.00</entrance_fee>
+    </destination>
+
+    <destination category="mountains">
+        <destination_name>Mount Fuji</destination_name>
+        <category>mountains</category>
+        <location>Honshu, Japan</location>
+        <description>Japan iconic volcano with popular climbing trails and lake views.</description>
+        <image_url>images/mount-fuji.jpg</image_url>
+        <entrance_fee>40.00</entrance_fee>
+    </destination>
+
+    <!-- ============ HISTORICAL SITES ============ -->
+    <destination category="historical">
+        <destination_name>Great Wall of China</destination_name>
+        <category>historical</category>
+        <location>China</location>
+        <description>Ancient defensive wall winding across northern hills.</description>
+        <image_url>images/great-wall-of-china.jpg</image_url>
+        <entrance_fee>30.00</entrance_fee>
+    </destination>
+
+    <destination category="historical">
+        <destination_name>Statue of Liberty</destination_name>
+        <category>historical</category>
+        <location>New York, USA</location>
+        <description>Iconic copper statue and symbol of freedom.</description>
+        <image_url>images/statue-of-liberty.jpg</image_url>
+        <entrance_fee>24.00</entrance_fee>
+    </destination>
+
+    <destination category="historical">
+        <destination_name>Machu Picchu</destination_name>
+        <category>historical</category>
+        <location>Cusco, Peru</location>
+        <description>Lost Inca city set high in the Andes mountains.</description>
+        <image_url>images/machu-picchu-peru.jpg</image_url>
+        <entrance_fee>45.00</entrance_fee>
+    </destination>
+
+    <destination category="historical">
+        <destination_name>Petra</destination_name>
+        <category>historical</category>
+        <location>Maan, Jordan</location>
+        <description>Rose coloured city carved into desert rock.</description>
+        <image_url>images/petra.jpg</image_url>
+        <entrance_fee>50.00</entrance_fee>
+    </destination>
+
+    <destination category="historical">
+        <destination_name>Pyramids of Giza</destination_name>
+        <category>historical</category>
+        <location>Giza, Egypt</location>
+        <description>The last surviving wonder of the ancient world.</description>
+        <image_url>images/pyramids.jpg</image_url>
+        <entrance_fee>22.00</entrance_fee>
+    </destination>
+
+    <destination category="historical">
+        <destination_name>Red Square</destination_name>
+        <category>historical</category>
+        <location>Moscow, Russia</location>
+        <description>Historic square framed by colourful onion domes.</description>
+        <image_url>images/red-square.jpg</image_url>
+        <entrance_fee>0.00</entrance_fee>
+    </destination>
+
+    <destination category="historical">
+        <destination_name>Colosseum</destination_name>
+        <category>historical</category>
+        <location>Rome, Italy</location>
+        <description>Roman amphitheatre nearly two thousand years old.</description>
+        <image_url>images/rome.jpg</image_url>
+        <entrance_fee>25.00</entrance_fee>
+    </destination>
+
+    <destination category="historical">
+        <destination_name>Sagrada Familia</destination_name>
+        <category>historical</category>
+        <location>Barcelona, Spain</location>
+        <description>Unfinished basilica designed by Antoni Gaudi.</description>
+        <image_url>images/sagrada-familia.jpg</image_url>
+        <entrance_fee>28.00</entrance_fee>
+    </destination>
+
+    <destination category="historical">
+        <destination_name>Taj Mahal</destination_name>
+        <category>historical</category>
+        <location>Agra, India</location>
+        <description>White marble mausoleum built for a beloved queen.</description>
+        <image_url>images/taj-mahal.jpg</image_url>
+        <entrance_fee>20.00</entrance_fee>
+    </destination>
+
+    <!-- ============ WILDLIFE ============ -->
+    <destination category="wildlife">
+        <destination_name>Borneo</destination_name>
+        <category>wildlife</category>
+        <location>Malaysia</location>
+        <description>Rainforest home of orangutans and rare wildlife.</description>
+        <image_url>images/borneo.jpg</image_url>
+        <entrance_fee>35.00</entrance_fee>
+    </destination>
+
+    <destination category="wildlife">
+        <destination_name>Galapagos Islands</destination_name>
+        <category>wildlife</category>
+        <location>Ecuador</location>
+        <description>Volcanic isles full of unique and fearless animals.</description>
+        <image_url>images/galapagos-ecuador.jpg</image_url>
+        <entrance_fee>100.00</entrance_fee>
+    </destination>
+
+    <destination category="wildlife">
+        <destination_name>Serengeti</destination_name>
+        <category>wildlife</category>
+        <location>Tanzania</location>
+        <description>Vast savannah famous for the great wildebeest migration.</description>
+        <image_url>images/serengeti.jpg</image_url>
+        <entrance_fee>70.00</entrance_fee>
+    </destination>
+
+    <destination category="wildlife">
+        <destination_name>Yala National Park</destination_name>
+        <category>wildlife</category>
+        <location>Southern, Sri Lanka</location>
+        <description>Home to leopards, elephants and colourful birdlife.</description>
+        <image_url>images/yala-sri-lanka.jpg</image_url>
+        <entrance_fee>55.00</entrance_fee>
+    </destination>
+
+    <!-- ============ CITIES ============ -->
+    <destination category="cities">
+        <destination_name>Bangkok</destination_name>
+        <category>cities</category>
+        <location>Thailand</location>
+        <description>Buzzing capital of temples, markets and street food.</description>
+        <image_url>images/bangkok.jpg</image_url>
+        <entrance_fee>0.00</entrance_fee>
+    </destination>
+
+    <destination category="cities">
+        <destination_name>Burj Khalifa</destination_name>
+        <category>cities</category>
+        <location>Dubai, UAE</location>
+        <description>The tallest building in the world with sky high views.</description>
+        <image_url>images/burj-khalifa.jpg</image_url>
+        <entrance_fee>40.00</entrance_fee>
+    </destination>
+
+    <destination category="cities">
+        <destination_name>Dubai</destination_name>
+        <category>cities</category>
+        <location>UAE</location>
+        <description>Futuristic desert city of skyscrapers and luxury.</description>
+        <image_url>images/dubai-city.png</image_url>
+        <entrance_fee>0.00</entrance_fee>
+    </destination>
+
+    <destination category="cities">
+        <destination_name>London</destination_name>
+        <category>cities</category>
+        <location>United Kingdom</location>
+        <description>Historic capital on the River Thames.</description>
+        <image_url>images/london.jpg</image_url>
+        <entrance_fee>0.00</entrance_fee>
+    </destination>
+
+    <destination category="cities">
+        <destination_name>Marina Bay Sands</destination_name>
+        <category>cities</category>
+        <location>Singapore</location>
+        <description>Iconic skyline with a rooftop infinity pool.</description>
+        <image_url>images/marina-bay-sands.jpg</image_url>
+        <entrance_fee>23.00</entrance_fee>
+    </destination>
+
+    <destination category="cities">
+        <destination_name>Paris</destination_name>
+        <category>cities</category>
+        <location>France</location>
+        <description>The city of light, art and the Eiffel Tower.</description>
+        <image_url>images/paris.jpg</image_url>
+        <entrance_fee>0.00</entrance_fee>
+    </destination>
+
+    <destination category="cities">
+        <destination_name>Sydney</destination_name>
+        <category>cities</category>
+        <location>Australia</location>
+        <description>Harbour city known for its opera house and beaches.</description>
+        <image_url>images/sydney.jpg</image_url>
+        <entrance_fee>0.00</entrance_fee>
+    </destination>
+
+    <destination category="cities">
+        <destination_name>Tokyo</destination_name>
+        <category>cities</category>
+        <location>Japan</location>
+        <description>Neon metropolis blending tradition and technology.</description>
+        <image_url>images/tokyo.jpg</image_url>
+        <entrance_fee>0.00</entrance_fee>
+    </destination>
+
+    <destination category="cities">
+        <destination_name>Vancouver</destination_name>
+        <category>cities</category>
+        <location>Canada</location>
+        <description>Coastal city surrounded by mountains and sea.</description>
+        <image_url>images/vancouver.jpg</image_url>
+        <entrance_fee>0.00</entrance_fee>
+    </destination>
+
+    <!-- ============ SCENIC WONDERS ============ -->
+    <destination category="scenic">
+        <destination_name>Banff National Park</destination_name>
+        <category>scenic</category>
+        <location>Alberta, Canada</location>
+        <description>Turquoise lakes framed by the Canadian Rockies.</description>
+        <image_url>images/banff-canada.jpg</image_url>
+        <entrance_fee>21.00</entrance_fee>
+    </destination>
+
+    <destination category="scenic">
+        <destination_name>Cliffs of Moher</destination_name>
+        <category>scenic</category>
+        <location>Clare, Ireland</location>
+        <description>Dramatic sea cliffs rising above the Atlantic.</description>
+        <image_url>images/cliffs-of-moher.jpg</image_url>
+        <entrance_fee>12.00</entrance_fee>
+    </destination>
+
+    <destination category="scenic">
+        <destination_name>Grand Canyon</destination_name>
+        <category>scenic</category>
+        <location>Arizona, USA</location>
+        <description>Immense red rock gorge carved by the Colorado River.</description>
+        <image_url>images/grand-canyon.jpg</image_url>
+        <entrance_fee>35.00</entrance_fee>
+    </destination>
+
+    <destination category="scenic">
+        <destination_name>Milford Sound</destination_name>
+        <category>scenic</category>
+        <location>Fiordland, New Zealand</location>
+        <description>Majestic fiord with waterfalls and steep cliffs.</description>
+        <image_url>images/milford-sound.jpg</image_url>
+        <entrance_fee>30.00</entrance_fee>
+    </destination>
+
+    <destination category="scenic">
+        <destination_name>Northern Lights</destination_name>
+        <category>scenic</category>
+        <location>Iceland</location>
+        <description>Dancing green auroras across the winter night sky.</description>
+        <image_url>images/northern-lights.jpg</image_url>
+        <entrance_fee>0.00</entrance_fee>
+    </destination>
+
+    <destination category="scenic">
+        <destination_name>Yellowstone</destination_name>
+        <category>scenic</category>
+        <location>Wyoming, USA</location>
+        <description>Geysers, hot springs and abundant wildlife.</description>
+        <image_url>images/yellowstone.jpg</image_url>
+        <entrance_fee>35.00</entrance_fee>
+    </destination>
+
+</destinations>

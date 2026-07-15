@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260" width="400" height="260" role="img" aria-label="Ancient temple with stone columns">
+  <rect width="400" height="260" fill="#efe6d2"/>
+  <circle cx="60" cy="60" r="26" fill="#f2b705"/>
+  <polygon points="120,90 280,90 200,50" fill="#b08968"/>
+  <rect x="120" y="90" width="160" height="18" fill="#9c7a56"/>
+  <rect x="130" y="108" width="18" height="110" fill="#cbb18c"/>
+  <rect x="165" y="108" width="18" height="110" fill="#cbb18c"/>
+  <rect x="200" y="108" width="18" height="110" fill="#cbb18c"/>
+  <rect x="235" y="108" width="18" height="110" fill="#cbb18c"/>
+  <rect x="110" y="218" width="180" height="20" fill="#9c7a56"/>
+</svg>

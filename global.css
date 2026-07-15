@@ -1,0 +1,97 @@
+/* ==========================================================
+   GLOBAL STYLESHEET  (shared by every page for consistency)
+   Coursework: this is the "Global CSS file ... to maintain a
+   consistent style" required by the brief.
+   ========================================================== */
+
+/* ---- 1. Reset: remove the browser's default spacing ---- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ---- 2. Colour palette (kept in one place with variables) ----
+   Colours chosen for strong contrast (checked against WCAG AA). */
+:root {
+    --primary-dark: #0f2e35;   /* deep teal-navy: header, footer, buttons */
+    --primary: #0d7377;        /* teal accent */
+    --primary-hover: #0a5a5d;  /* darker teal for hover */
+    --accent: #d9a441;         /* warm gold accent for an elegant touch */
+    --bg-page: #f6f8f8;        /* very light page background */
+    --bg-light: #e7f0f0;       /* light panels */
+    --surface: #ffffff;        /* cards / inputs */
+    --text: #1b2a2d;           /* near-black body text (high contrast) */
+    --text-muted: #45585b;     /* softer text, still AA on white */
+    --border-color: #5f7274;   /* borders */
+    --white: #ffffff;
+    --error: #b00020;          /* accessible red for error messages */
+    --success: #0a5a2f;        /* accessible green for success message */
+    /* Elegant, eye-catching fonts (loaded from Google Fonts in each page) */
+    --font-head: 'Playfair Display', Georgia, serif;   /* elegant headings */
+    --font-body: 'Poppins', Arial, Helvetica, sans-serif; /* clean body text */
+}
+
+/* ---- 3. Base typography ----
+   Poppins for body text (clean and modern), Playfair Display for
+   headings (elegant and eye-catching). */
+body {
+    font-family: var(--font-body);
+    line-height: 1.6;
+    color: var(--text);
+    /* Soft elegant gradient instead of a flat white background.
+       Fixed so it stays in place while the page scrolls. */
+    background: linear-gradient(160deg, #f4efe6 0%, #e9f2f0 45%, #d8ebe8 100%);
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+/* Headings use the elegant serif font for a premium travel-brand feel. */
+h1, h2, h3, h4 {
+    font-family: var(--font-head);
+    line-height: 1.25;
+    color: var(--primary-dark);
+}
+
+/* ---- 4. Links reset ---- */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* ---- 5. Accessibility: visible keyboard focus ----
+   Anyone tabbing with a keyboard can see where they are. */
+a:focus,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 3px solid var(--primary);
+    outline-offset: 2px;
+}
+
+/* ---- 6. Skip link: lets keyboard/screen-reader users jump
+   straight to the main content. Hidden until focused. ---- */
+.skip-link {
+    position: absolute;
+    left: -999px;
+    top: 0;
+    background: var(--primary-dark);
+    color: var(--white);
+    padding: 10px 16px;
+    z-index: 2000;
+}
+
+.skip-link:focus {
+    left: 10px;
+    top: 10px;
+}

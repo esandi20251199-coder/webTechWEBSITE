@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260" width="400" height="260" role="img" aria-label="Snow capped mountains under a clear sky">
+  <rect width="400" height="260" fill="#d9ecf2"/>
+  <circle cx="330" cy="60" r="30" fill="#f2b705"/>
+  <path d="M0 260 L110 90 L190 200 L250 130 L400 260 Z" fill="#5c7a80"/>
+  <path d="M110 90 L140 135 L80 135 Z" fill="#ffffff"/>
+  <path d="M250 130 L275 168 L225 168 Z" fill="#ffffff"/>
+  <path d="M0 260 L90 170 L180 260 Z" fill="#3f5c61"/>
+</svg>
